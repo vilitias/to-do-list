@@ -97,3 +97,40 @@ button:hover {
 #button-text {
   width: 108px;
 }
+
+.remove-button {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background: url("./images/delete-button-inactive.svg") no-repeat center center /
+    contain;
+}
+
+.remove-button:hover {
+  background: url("./images/delete-button-active.svg") no-repeat center center /
+    contain;
+}
+
+.sort-button-up {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background: url("./images/sort-up-gray.svg") no-repeat center center / contain;
+}
+
+.sort-button-up:hover {
+  background: url("./images/sort-up-black.svg") no-repeat center center /
+    contain;
+}
+.sort-button-down {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background: url("./images/sort-down-gray.svg") no-repeat center center /
+    contain;
+}
+
+.sort-button-down:hover {
+  background: url("./images/sort-down-black.svg") no-repeat center center /
+    contain;
+}
