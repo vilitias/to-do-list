@@ -134,3 +134,7 @@ button:hover {
   background: url("./images/sort-down-black.svg") no-repeat center center /
     contain;
 }
+
+.selected {
+  background-color: rgb(245, 224, 245);
+}
