@@ -17,11 +17,14 @@ window.addEventListener("load", (event) => { // выполняем все дей
 
         newCard.append(newInput);
         newCard.append(newImg);
-
-
         document.querySelector(".cards-inner-wrapper").append(newCard);
         newTask.value = "";
 
+        newInput.addEventListener("keyup", (event) => {
+            if (event.keyCode === 13) {
+                event.target.blur();
+            }
+        })
 
         newImg.addEventListener("click", removeTask);
 
@@ -68,15 +71,12 @@ window.addEventListener("load", (event) => { // выполняем все дей
     addButton.addEventListener("click", addTask) 
     
     //при нажатии на enter на первой строке тоже срабатывает добавление
-    document.querySelectorAll("input").forEach((element, index) => {
-        if (index === 0) {
-            element.addEventListener("keyup", (event) => {
-                if (event.keyCode === 13) {
-                    document.getElementById("add-button").click();
-                }
-
-            })
-        }
+    document.querySelectorAll("input").forEach(element => {
+        element.addEventListener("keyup", (event) => {
+            if (event.keyCode === 13) {
+                document.getElementById("add-button").click();
+            }
+        })
     } )
 
     let sortButton = document.querySelector("#sort-button");
