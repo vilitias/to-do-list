@@ -62,6 +62,15 @@ body {
 
 input {
   border: none;
+  border-radius: 10px;
+  outline: none;
+  padding-left: 5px;
+}
+
+input:hover {
+  /* background-color: rgb(252, 241, 252);
+   */
+  border-bottom: tomato 1px solid;
 }
 
 #add-button {
